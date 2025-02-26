@@ -14,7 +14,7 @@ function Contact(props: IContactProps): React.ReactElement {
     <div className="contact">
       <Icon className="icon" size={30} />
       <div>
-        <h3 className="heading">{heading}</h3>
+        <h4 className="heading">{heading}</h4>
         <div>{link ? <a href={link}>{value}</a> : value}</div>
       </div>
     </div>

@@ -31,5 +31,10 @@ h2 {
 }
 
 h3 {
+  font-size: 1.5rem;
+  font-weight: getFontWeight('semi-bold');
+}
+
+h4 {
   font-weight: getFontWeight('semi-bold');
 }

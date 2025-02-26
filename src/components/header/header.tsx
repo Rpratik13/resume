@@ -5,7 +5,7 @@ import { profile } from 'constants/profile';
 interface IHeaderProps {
   contacts: typeof profile.contacts;
   name: string;
-  title: string;
+  title?: string;
 }
 
 function Header(props: IHeaderProps): React.ReactElement {

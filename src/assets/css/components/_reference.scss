@@ -1,0 +1,12 @@
+.reference-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.reference {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 100%;
+}
