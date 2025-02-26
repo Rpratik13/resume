@@ -1,0 +1,18 @@
+.profile {
+  .content {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+
+    .photo {
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+    }
+
+    .summary {
+      text-align: justify;
+      width: 90%;
+    }
+  }
+}
