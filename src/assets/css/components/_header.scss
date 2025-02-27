@@ -3,14 +3,7 @@
 .header {
   position: relative;
 
-  .yellow-ball {
-    background-color: getColor('yellow.primary');
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-  }
-
-  .name {
+  @include element(name) {
     bottom: 0;
     font-size: 3rem;
     font-weight: 600;
@@ -19,12 +12,19 @@
     top: 50px;
   }
 
-  .title {
+  @include element(title) {
     font-size: 2rem;
     left: 50px;
     position: absolute;
     top: 100px;
     width: fit-content;
+  }
+
+  @include element(yellow-ball) {
+    background-color: getColor('yellow.primary');
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
   }
 
   .contact-container {

@@ -9,9 +9,9 @@ function Profile(props: IProfileProps): React.ReactElement {
   return (
     <div className="profile">
       <h2>Profile</h2>
-      <div className="content">
-        <img className="photo" src={image} />
-        <div className="summary text">{summary}</div>
+      <div className="profile__content">
+        <img className="profile__photo" src={image} />
+        <div className="profile__summary text">{summary}</div>
       </div>
     </div>
   );

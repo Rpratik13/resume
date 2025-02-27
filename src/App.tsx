@@ -6,10 +6,10 @@ import classnames from 'classnames';
 
 import Award from 'components/award';
 import Header from 'components/header';
+import Skills from 'components/skills';
 import Profile from 'components/profile';
 import Section from 'components/section';
 import Reference from 'components/reference';
-import Skills from 'components/skills/skills';
 import Experience from 'components/experience';
 
 import { profile } from 'constants/profile';
@@ -29,7 +29,9 @@ function App(): React.ReactElement {
         name={profile.name}
         title={profile.title}
       />
+
       <Profile image={profile.photo} summary={profile.summary} />
+
       <Section title="Work Experience">
         <>
           {profile.experience.map((experience) => {
@@ -45,6 +47,7 @@ function App(): React.ReactElement {
           })}
         </>
       </Section>
+
       <Section title="Projects">
         <>
           {profile.projects.map((experience) => {
@@ -59,6 +62,7 @@ function App(): React.ReactElement {
           })}
         </>
       </Section>
+
       <Section title="Skills">
         <div className="skills-wrapper">
           <Skills skills={profile.skills.Professional} title="Professional" />

@@ -1,18 +1,20 @@
+@use '/src/assets/css/helpers' as *;
+
 .profile {
-  .content {
+  @include element(content) {
     display: flex;
     gap: 2rem;
     margin-top: 1rem;
+  }
 
-    .photo {
-      border-radius: 50%;
-      height: 150px;
-      width: 150px;
-    }
+  @include element(photo) {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+  }
 
-    .summary {
-      text-align: justify;
-      width: 90%;
-    }
+  @include element(summary) {
+    text-align: justify;
+    width: 90%;
   }
 }

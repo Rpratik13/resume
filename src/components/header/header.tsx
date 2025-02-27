@@ -13,9 +13,9 @@ function Header(props: IHeaderProps): React.ReactElement {
 
   return (
     <div className="header">
-      <div className="yellow-ball" />
-      <h1 className="name">{name}</h1>
-      {title && <h2 className="title text">{title}</h2>}
+      <div className="header__yellow-ball" />
+      <h1 className="header__name">{name}</h1>
+      {title && <h2 className="header__title text">{title}</h2>}
 
       {contacts.length && (
         <div className="contact-container">
